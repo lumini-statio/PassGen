@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #f2f2f2;
+    padding: 20px;
+}
+
+p {
+    font-size: 1.8em;
+}
+
+input {
+    color: #f2f2f2;
+}
+
+label {
+    font-size: 1.2em;
+    color: #f2f2f2;    
+}
+
+select {
+    padding: 5px;
+}
+
+
+
+button {
+    padding: 5px;
+}

@@ -1,0 +1,44 @@
+{% extends 'generator/layout.html' %}
+
+{% block content %}
+
+    <div class="col-md-4 offset-md-4">
+        <form action="{% url 'Pass' %}" class="card card-body" style="background-color: #111111;">
+
+            <h1 class="h4 text-center">Password Generator</h1>
+    
+            <label for="length" class="text-center">Select the length of your Password</label>
+            <select name="length" id="length" class="form-control m-2">
+                <option value="6">6 characters</option>
+                <option value="7">7 characters</option>
+                <option value="8">8 characters</option>
+                <option value="9">9 characters</option>
+                <option value="10">10 characters</option>
+                <option value="11">11 characters</option>
+                <option value="12">12 characters</option>
+                <option value="13">13 characters</option>
+                <option value="14">14 characters</option>
+            </select>
+            
+            <div class="form-check form-switch m-2">
+                <input class="form-check-input" type="checkbox" role="switch" name="uppercase" id="uppercase" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked" >Uppercase</label>
+              </div>
+            
+              <div class="form-check form-switch m-2">
+                <input class="form-check-input" type="checkbox" role="switch"  name="special" id="special" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked" >Special characters</label>
+              </div>
+            
+              <div class="form-check form-switch m-2">
+                <input class="form-check-input" type="checkbox" role="switch"  name="numbers" id="numbers" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked" >Numbers</label>
+              </div>
+
+            <button class="btn btn-primary m-2">Generate Password</button>
+    
+        </form>
+    </div>
+
+
+{% endblock %}
